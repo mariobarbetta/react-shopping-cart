@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "_id": "les_paul",
+      "image": "/images/Les_Paul.png",
+      "title": "Gibson Custom Historic '56 Les Paul VOS Electric Guitar Gold Top",
+      "description": "1956 was the only full year in which the Les Paul model featured the powerful P-90 pickups and the adjustable ABR-1 bridge setup, a combination that allowed the Les Paul model to intonate, sustain, and thrill like never before. This Gibson Custom Shop '56 Reissue captures the look, feel and searing sound of an original 1956 Les Paul Goldtop in exhaustive detail, featuring all solid woods, vintage-accurate gold paint, authentic replica parts, Historic narrow/tall frets, and hot hide glue construction.",
+      "category": "guitar",
+      "price": 4699
+    },
+    {
+      "_id": "telecaster",
+      "image": "/images/Telecaster.png",
+      "title": "Fender Deluxe Nashville Telecaster Pau Ferro Fingerboard Fiesta Red",
+      "description": "Straight from the studios of Music Row in the home of country music Nashville, TN comes the Deluxe Nashville Tele, a tonally versatile performer with a unique (for a Tele) three-pickup design. A distinctive entry into the Fender family, this Tele growls, snaps and screams with flexible tone that can match any song. With its original Fender style, customized switching and fast, smooth playing feel, this Tele is ready to command any stage from the local honky-tonk to the Grand Ole Opry.",
+      "category": "guitar",
+      "price": 824.99
+    },
+    {
+      "_id": "ac30",
+      "image": "/images/AC30.png",
+      "title": "Vox Custom AC30C2X 30W 2x12 Tube Guitar Combo Amp Black",
+      "description": "The Vox AC30C2X amp makes use of 3 x 12AX7 preamp tubes and 4 x EL84 tubes to deliver 30 watts of power. The AC30C2X tube amp uses 2 - 12&ldquo Celestion Alnico Blues, and includes a switchable 8/16 ohm output jack for powering an external speaker cabinet when you need to speak with a little more authority; using this jack will mute the internal speakers. Additionally, a second extension speaker jack allows you to run an extra 16-ohm cabinet along with the internal speakers for a fuller sound.",
+      "category": "amp",
+      "price": 1549.99
+    },
+    {
+      "_id": "jc120",
+      "image": "/images/JC120.png",
+      "title": "Roland JC-120 Jazz Chorus Amp",
+      "description": "For over 30 years, its sound quality and built-in effects have made the Roland JC-120 Jazz Chorus Amp the choice of pro players everywhere. It features 2 independent 60W amps, 2 input channels (Normal and Effects) with 3-band EQ for each, and a pair of 12&ldquo speakers. Effects include reverb, distortion, adjustable vibrato, and true stereo chorus. Distortion, reverb, and chorus are footswitchable.",
+      "category": "amp",
+      "price": 999.99
+    },
+    {
+      "_id": "pick",
+      "image": "/images/pick.png",
+      "title": "Dunlop Nylon Standard Guitar Pick .60 mm 1 Dozen",
+      "description": "Dunlop Manufacturing produces many different types and sizes of plectra (or picks as they are also named) to suit the varied preferences of today's musicians. Dunlop's wide variety of gauges, shapes, sizes, and materials allows the player to select the exact guitar pick for his/her own particular style of playing. One dozen.",
+      "category": "accessories",
+      "price": 3.31
+    },
+    {
+      "_id": "cable",
+      "image": "/images/cable.png",
+      "title": "Mogami Gold Series Instrument Cable 10 ft.",
+      "description": "Mogami Gold High-Definition represents the gold standard in instrument cables. Virtually every major recording facility in the world is wired with Mogami cable. Mogami is famous for unmatched accuracy, extremely low noise, and remarkable flexibility. Top engineers rave about the amazing clarity and silent background they get with Mogami cable. If accuracy in reproduction is your goal, Mogami Gold is the audio cable for you.",
+      "category": "accessories",
+      "price": 55.95
+    }
+  ]
+}

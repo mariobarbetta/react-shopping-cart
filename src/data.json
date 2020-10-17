@@ -17,6 +17,22 @@
       "price": 824.99
     },
     {
+      "_id": "1sj200",
+      "image": "/images/SJ-200.png",
+      "title": "Gibson 1957 SJ-200 Acoustic Guitar Antique Natural",
+      "description": "The Gibson 1957 SJ-200 features the vintage vibe and feel from the era that give birth to some of the most prized Gibson acoustic instruments. This new Custom Shop 1957 SJ-200 offers details such as hand-selected maple for the back and sides, a headstock stinger and Gibson's Thermally Aged top for the full vintage effect.",
+      "category": "guitar",
+      "price": 5999
+    },
+    {
+      "_id": "1danelectro",
+      "image": "/images/Danelectro.png",
+      "title": "Danelectro '59M NOS+ Electric Guitar - Black",
+      "description": "Semi-hollowbody Electric Guitar with Spruce Body, Hardboard Top and Back, Maple Neck, Pau Ferro Fingerboard, and 2 NOS+ Single-coil Pickups - Black",
+      "category": "guitar",
+      "price": 479
+    },
+    {
       "_id": "2ac30",
       "image": "/images/AC30.png",
       "title": "Vox Custom AC30C2X 30W 2x12 Tube Guitar Combo Amp Black",
@@ -31,6 +47,14 @@
       "description": "For over 30 years, its sound quality and built-in effects have made the Roland JC-120 Jazz Chorus Amp the choice of pro players everywhere. It features 2 independent 60W amps, 2 input channels (Normal and Effects) with 3-band EQ for each, and a pair of 12&ldquo speakers. Effects include reverb, distortion, adjustable vibrato, and true stereo chorus. Distortion, reverb, and chorus are footswitchable.",
       "category": "amp",
       "price": 999.99
+    },
+    {
+      "_id": "2deluxe",
+      "image": "/images/Deluxe.png",
+      "title": "Fender Vintage Reissue '65 Deluxe Reverb Guitar Combo Amp Black",
+      "description": "The Fender '65 Deluxe Reverb Combo Amp has a sound big enough to cut through the muddiest mix, but it's small enough to turn up make the most of natural tube distortion in small clubs. This makes it the perfect studio amp, as well. It's a resurrection of a classic vintage tone monster. Crank up this faithful, U.S.-made reissue for your daily requirement of fat Fender tone. Delivers 22W through a 12&ldquo speaker. Features two channels (normal, vibrato), all-tube circuitry, tube vibrato, tube spring reverb, Blackface cosmetics and two-button footswitch to control the reverb and vibrato effects.",
+      "category": "amp",
+      "price": 1199.99
     },
     {
       "_id": "3pick",

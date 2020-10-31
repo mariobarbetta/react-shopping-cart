@@ -17,6 +17,14 @@
       "price": 824.99
     },
     {
+      "_id": "1es335",
+      "image": "/images/ES335.png",
+      "title": "Gibson ES-335 Semi-Hollowbody Electric Guitar Sixties Cherry",
+      "description": "The Gibson ES-335 DOT is the cornerstone of the Gibson ES line-up. From its inaugural appearance in 1958, the Gibson ES-335 set an unmatched standard. The pearloid dot inlay rosewood fingerboard on a hand-rolled Rounded &ldquoC&ldquo mahogany neck remind players where it all started. Gibson's Calibrated T-Type humbucking pickups are paired with our hand-wired control assembly. The result is that versatile Gibson ES tone that players have craved for over 60 years. Tuning stability and precise intonation are provided by the Vintage Deluxe tuners with Keystone buttons, paired with light weight Aluminum ABR-1 bridge and Stop Bar tailpiece, anchored by steel thumb-wheels and tailpiece studs. Includes hardshell case.",
+      "category": "guitar",
+      "price": 2999
+    },
+    {
       "_id": "1sj200",
       "image": "/images/SJ-200.png",
       "title": "Gibson 1957 SJ-200 Acoustic Guitar Antique Natural",
@@ -31,6 +39,14 @@
       "description": "Semi-hollowbody Electric Guitar with Spruce Body, Hardboard Top and Back, Maple Neck, Pau Ferro Fingerboard, and 2 NOS+ Single-coil Pickups - Black",
       "category": "guitar",
       "price": 479
+    },
+    {
+      "_id": "1rickenbacker",
+      "image": "/images/Rickenbacker.png",
+      "title": "Rickenbacker 360 12-String Electric Guitar Jetglo",
+      "description": "The Rickenbacker 360 12-String Electric Guitar gives you that jangly, vintage electric 12-string tone that just can't be imitated. Solid maple semi-hollowbody construction with a through-body neck provides mesmerizing sustain and resonance. The fast-playing neck features double truss rods and a thick bound rosewood fretboard with triangular inlays. Dual single-coils and dual stereo outs for studio and stage versatility. Includes case.",
+      "category": "guitar",
+      "price": 2799
     },
     {
       "_id": "2ac30",
@@ -49,6 +65,14 @@
       "price": 999.99
     },
     {
+      "_id": "2marshall",
+      "image": "/images/Marshall.png",
+      "title": "Marshall Studio Vintage 20W Tube Guitar Amp Head Black and Gold",
+      "description": "Based on an amp that inspired generations of iconic guitarists, the 1959SLP. Marshall Studio Vintage amps deliver the unmistakeable tone shaping and harmonics that are expected from the 1959SLP in a portable format. You can play anything from saturated blues tones to biting leads for classic rock. Studio Vintage amps provide four separate inputs for you to blend your sound, distinctive EQ settings including presence control, a DI output and power reduction.",
+      "category": "amp",
+      "price": 1299.99
+    },
+    {
       "_id": "2deluxe",
       "image": "/images/Deluxe.png",
       "title": "Fender Vintage Reissue '65 Deluxe Reverb Guitar Combo Amp Black",
@@ -63,6 +87,22 @@
       "description": "Dunlop Manufacturing produces many different types and sizes of plectra (or picks as they are also named) to suit the varied preferences of today's musicians. Dunlop's wide variety of gauges, shapes, sizes, and materials allows the player to select the exact guitar pick for his/her own particular style of playing. One dozen.",
       "category": "accessories",
       "price": 3.31
+    },
+    {
+      "_id": "3capo",
+      "image": "/images/capo.png",
+      "title": "G7th Performance 3 ART Capo, Silver",
+      "description": "The G7th Performance 3 capo has yet again been meticulously redesigned to help keep your guitar in tune, to protect your neck, and to safeguard your tone. Fitted with G7th's Adaptive Radius Technology, the Performance 3 string pad mechanism adapts to match the curvature over the strings in every position, on any guitar neck. This means the pressure is always evenly distributed over the fingerboard, giving unrivaled tuning stability.",
+      "category": "accessories",
+      "price": 54.99
+    },
+    {
+      "_id": "3strings",
+      "image": "/images/strings.png",
+      "title": "Ernie Ball Super Slinky Nickel Wound Electric Guitar Strings",
+      "description": "Ernie Ball Super Slinky strings are some of the most popular electric guitar strings of all time. They offer a balanced sound that's neither bright, nor too dark. With gauges 9-42, Super Slinky strings very easy to fret and bend. They're extremely popular with guitarists who love to solo, including Jeff Beck. Plus, 9's are the most popular string gauge among new players. Super Slinky strings are sometimes identified by their model number, 2223. These Ernie Ball nickel wound strings have a Custom Gauge arrangement of .009, .011, .016, .024w, .032, and .042. While they're officially referred to as Nickel Wound, it's actually a nickel-plated steel wrap around a tin-plated hex steel core. They first hit the scene in the 1970s, and their bright pink string packaging hasn't changed much since. Since then, Ernie Ball Super Slinky strings have become an industry standard for rock musicians.",
+      "category": "accessories",
+      "price": 5.49
     },
     {
       "_id": "3cable",

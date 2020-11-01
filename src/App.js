@@ -1,6 +1,5 @@
 //Feature 1
 import React from "react";
-import data from "./data.json";
 import Products from "./components/Products";
 import Filter from "./components/filter";
 import Cart from "./components/Cart";
@@ -11,12 +10,9 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: data.products,
       cartItems: localStorage.getItem("cartItems")
         ? JSON.parse(localStorage.getItem("cartItems"))
         : [],
-      category: "",
-      sort: "",
     };
   }
 
@@ -51,74 +47,30 @@ class App extends React.Component {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
-  sortProducts = (event) => {
-    const sort = event.target.value;
-    this.setState((state) => ({
-      sort: sort,
-      products: this.state.products
-        .slice()
-        .sort((a, b) =>
-          sort === "lowest"
-            ? a.price > b.price
-              ? 1
-              : -1
-            : sort === "highest"
-            ? a.price < b.price
-              ? 1
-              : -1
-            : a._id > b._id
-            ? 1
-            : -1
-        ),
-    }));
-  };
-
-  filterProducts = (event) => {
-    if (event.target.value === "") {
-      this.setState({ category: event.target.value, products: data.products });
-    } else {
-      this.setState({
-        category: event.target.value,
-        products: data.products.filter(
-          (product) => product.category === event.target.value
-        ),
-      });
-    }
-  };
-
   render() {
     return (
-      <Provider store ={store}>
-      <div className="grid-container">
-        <header>
-          <a href="/">The Music Source</a>
-        </header>
-        <main>
-          <div className="content">
-            <div className="main">
-              <Filter
-                count={this.state.products.length}
-                category={this.state.category}
-                sort={this.state.sort}
-                filterProducts={this.filterProducts}
-                sortProducts={this.sortProducts}
-              ></Filter>
-              <Products
-                products={this.state.products}
-                addToCart={this.addToCart}
-              ></Products>
+      <Provider store={store}>
+        <div className="grid-container">
+          <header>
+            <a href="/">The Music Source</a>
+          </header>
+          <main>
+            <div className="content">
+              <div className="main">
+                <Filter />
+                <Products addToCart={this.addToCart}></Products>
+              </div>
+              <div className="sidebar">
+                <Cart
+                  cartItems={this.state.cartItems}
+                  removeFromCart={this.removeFromCart}
+                  createOrder={this.createOrder}
+                />
+              </div>
             </div>
-            <div className="sidebar">
-              <Cart
-                cartItems={this.state.cartItems}
-                removeFromCart={this.removeFromCart}
-                createOrder={this.createOrder}
-              />
-            </div>
-          </div>
-        </main>
-        <footer>All rights reserved</footer>
-      </div>
+          </main>
+          <footer>All rights reserved</footer>
+        </div>
       </Provider>
     );
   }

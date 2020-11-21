@@ -48,7 +48,7 @@ const Order = mongoose.model(
         type: String,
         default: shortid.generate,
       },
-      emai: String,
+      email: String,
       name: String,
       address: String,
       total: Number,
@@ -78,6 +78,16 @@ app.post("/api/orders", async (req, res) => {
     return res.send({ message: "Data is required." });
   }
   const order = await Order(req.body).save();
+  res.send(order);
+});
+
+app.get("/api/orders", async (req, res) => {
+  const orders = await Order.find({});
+  res.send(orders);
+});
+
+app.delete("/api/orders/:id", async (req, res) => {
+  const order = await Order.findByIdAndDelete(req.params.id);
   res.send(order);
 });
 

@@ -71,7 +71,9 @@ header a {
 
 main {
   grid-area: main;
+  margin-bottom: 40px;
 }
+
 footer {
   grid-area: footer;
   background-color: #1e1e1f;
@@ -286,11 +288,11 @@ th {
 @media only screen and (max-width: 570px) {
   .logo {
     padding-top: 10px;
-    width: 100px;
+    width: 120px;
   }
 
   .grid-container {
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-rows: 7rem 1fr 5rem;
   }
 
   .order-phone {
@@ -318,5 +320,29 @@ th {
 
   .filter {
     margin: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cart-header,
+  .cart-items,
+  label {
+    font-size: 1.2rem;
+  }
+
+  .total > div {
+    font-size: 1.6rem;
+  }
+
+  .cart {
+    padding: 0.4rem;
+    margin: 0.4rem;
+  }
+
+  .cart button {
+    font-size: 1.4rem;
+    padding: 1rem 0.4rem 1rem 0.4rem;
   }
 }

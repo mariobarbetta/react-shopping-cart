@@ -12,8 +12,24 @@ class App extends React.Component {
         <BrowserRouter>
           <div className="grid-container">
             <header>
-              <Link to="/">The Music Source</Link>
-              <Link to="/admin">Admin</Link>
+              <Link to="/">
+                <img
+                  className="logo"
+                  src="/images/DreamGuitarsLogo.png"
+                  alt="Dream Guitars Logo"
+                ></img>
+              </Link>
+              <div>
+                <Link to="/admin">
+                  <p className="admin-link">Admin</p>
+                </Link>
+                <p className="order-phone">Order now 888-XXX-XXXX</p>
+                <img
+                  className="cart-icon"
+                  src="/images/shopping_cart.png"
+                  alt="cart"
+                />
+              </div>
             </header>
             <main>
               <Route path="/admin" component={AdminScreen} />

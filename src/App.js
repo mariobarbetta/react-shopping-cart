@@ -4,8 +4,24 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import AdminScreen from "./screens/AdminScreen";
 import HomeScreen from "./screens/HomeScreen";
+import MobileCart from "./components/MobileCart";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMobileCart: false,
+    };
+  }
+
+  // openModal = () => {
+  //   this.setState({ product });
+  // };
+
+  closeModal = () => {
+    this.setState({ showMobileCart: false });
+  };
+
   render() {
     return (
       <Provider store={store}>
@@ -28,9 +44,16 @@ class App extends React.Component {
                   className="cart-icon"
                   src="/images/shopping_cart.png"
                   alt="cart"
+                  onClick={() => {
+                    this.setState({ showMobileCart: true });
+                  }}
                 />
               </div>
             </header>
+            <MobileCart
+              showMobileCart={this.state.showMobileCart}
+              closeModal={this.closeModal}
+            />
             <main>
               <Route path="/admin" component={AdminScreen} />
               <Route exact path="/" component={HomeScreen} />

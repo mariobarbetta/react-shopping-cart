@@ -33,20 +33,43 @@ class MobileCart extends Component {
     };
     this.props.closeModal();
     this.props.createOrder(order);
+    this.setState({ showCheckout: false });
   };
 
-  closeModal = () => {
+  closeOrderModal = () => {
     this.props.clearOrder();
+  };
+
+  closeCartModal = () => {
+    this.props.closeModal();
+    this.setState({ showCheckout: false });
   };
 
   render() {
     const { showMobileCart, cartItems, order } = this.props;
     return (
       <div>
+        <div
+          className="cart-icon-container"
+          onClick={() => {
+            this.props.showMobileCartModal();
+          }}
+        >
+          <img
+            className="cart-icon"
+            src="/images/shopping_cart.png"
+            alt="cart"
+            // onClick={() => {
+            //   this.props.showMobileCartModal();
+            // }}
+          />
+          {cartItems.length > 0 && <span>{cartItems.length}</span>}
+        </div>
+
         {order && (
-          <Modal isOpen={true} onRequestClose={this.closeModal}>
+          <Modal isOpen={true} onRequestClose={this.closeOrderModal}>
             <Zoom>
-              <button className="close-modal" onClick={this.closeModal}>
+              <button className="close-modal" onClick={this.closeOrderModal}>
                 x
               </button>
               <div className="order-details">
@@ -89,9 +112,9 @@ class MobileCart extends Component {
           </Modal>
         )}
         {showMobileCart && (
-          <Modal isOpen={true} onRequestClose={this.props.closeModal}>
+          <Modal isOpen={true} onRequestClose={this.closeCartModal}>
             <Zoom>
-              <button className="close-modal" onClick={this.props.closeModal}>
+              <button className="close-modal" onClick={this.closeCartModal}>
                 x
               </button>
               {cartItems.length === 0 ? (

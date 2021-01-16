@@ -32,10 +32,16 @@ class Cart extends Component {
       total: this.props.cartItems.reduce((a, c) => a + c.price * c.count, 0),
     };
     this.props.createOrder(order);
+    this.setState({ showCheckout: false });
   };
 
   closeModal = () => {
     this.props.clearOrder();
+  };
+
+  handleRemoveClick = (item) => {
+    this.props.removeFromCart(item);
+    this.setState({ showCheckout: false });
   };
 
   render() {
@@ -43,9 +49,9 @@ class Cart extends Component {
     return (
       <div>
         {cartItems.length === 0 ? (
-          <div className="cart cart-header">Your cart is empty</div>
+          <div className="cart-header">Your cart is empty</div>
         ) : (
-          <div className="cart cart-header">
+          <div className="cart-header">
             You have {cartItems.length} item{cartItems.length > 1 ? "s" : ""} in
             your cart{"  "}
           </div>
@@ -111,7 +117,7 @@ class Cart extends Component {
                         {item.count} x {formatCurrency(item.price)}&nbsp;&nbsp;
                         <button
                           className="button"
-                          onClick={() => this.props.removeFromCart(item)}
+                          onClick={() => this.handleRemoveClick(item)}
                         >
                           Remove
                         </button>

@@ -22,6 +22,10 @@ class App extends React.Component {
     this.setState({ showMobileCart: false });
   };
 
+  showMobileCartModal = () => {
+    this.setState({ showMobileCart: true });
+  };
+
   render() {
     return (
       <Provider store={store}>
@@ -40,20 +44,13 @@ class App extends React.Component {
                   <p className="admin-link">Admin</p>
                 </Link>
                 <p className="order-phone">Order now 888-XXX-XXXX</p>
-                <img
-                  className="cart-icon"
-                  src="/images/shopping_cart.png"
-                  alt="cart"
-                  onClick={() => {
-                    this.setState({ showMobileCart: true });
-                  }}
+                <MobileCart
+                  showMobileCartModal={this.showMobileCartModal}
+                  showMobileCart={this.state.showMobileCart}
+                  closeModal={this.closeModal}
                 />
               </div>
             </header>
-            <MobileCart
-              showMobileCart={this.state.showMobileCart}
-              closeModal={this.closeModal}
-            />
             <main>
               <Route path="/admin" component={AdminScreen} />
               <Route exact path="/" component={HomeScreen} />

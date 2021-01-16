@@ -6,6 +6,7 @@ import Zoom from "react-reveal/Zoom";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
+import { Roller } from "react-css-spinners";
 
 class Products extends Component {
   constructor(props) {
@@ -33,7 +34,10 @@ class Products extends Component {
       <div>
         <Fade bottom cascade>
           {!this.props.products ? (
-            <div>Loading...</div>
+            // <div>Loading...</div>
+            <div className="spinner-container">
+              <Roller className="spinner" color="#a8a5a5" size={40} />
+            </div>
           ) : (
             <ul className="products">
               {this.props.products.map((product) => (
